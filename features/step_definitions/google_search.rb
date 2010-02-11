@@ -1,7 +1,8 @@
 require 'spec'
-require 'safariwatir'
+# require 'safariwatir'
+require 'firewatir'
 
-BROWSER = Watir::Safari.new
+BROWSER = Watir::Firefox.new
 
 PAGES = {
   'Google Homepage' => 'http://www.google.com/'
