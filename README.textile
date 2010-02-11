@@ -1,3 +1,17 @@
 $ gem install cucumber
 
 $ cucumber features
+<pre><code>
+Feature: Google Search
+   In order to find out more about Hurra Communications
+   I need to be able to search Google
+
+  Scenario: Google search for Hurra Communications           # features/google_search.feature:5
+    Given that I am on the Google Homepage                   # features/step_definitions/google_search.rb:13
+    When I search for Hurra Communications                   # features/step_definitions/google_search.rb:17
+    Then I should see "Hurra.com - Hurra Communications Ltd" # features/step_definitions/google_search.rb:22
+
+1 scenario (1 passed)
+3 steps (3 passed)
+0m5.790s
+</code></pre>
